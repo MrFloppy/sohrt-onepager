@@ -1,0 +1,41 @@
+
+.nav {
+  list-style-type: none;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.nav__element {
+  background-color: $nav-element-bg-color;
+  border: 1px solid darken( $nav-element-bg-color, 11% );
+  float: left;
+  margin-left: 1.25em;
+  padding: 1em;
+  width: emCalc(125);
+
+  &:hover {
+    background-color: darken( $nav-element-bg-color, 10% );
+  }
+
+  &.first {
+    border-left: emCalc(3) solid green;
+  }
+
+  &.second {
+    border-left: emCalc(3) solid blue;
+  }
+
+  &.third {
+    border-left: emCalc(3) solid red;
+  }
+
+  &.fourth {
+    border-left: emCalc(3) solid yellow;
+  }
+}
+
+.clearfix {
+  clear: both;
+}
